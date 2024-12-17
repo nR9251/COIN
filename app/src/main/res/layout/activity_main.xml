@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="！！猜硬幣！！"
+        android:textAlignment="center"
+        android:textSize="72px"
+        android:textColor="#b32536" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coin"
+        android:src="@drawable/tachi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="LeftAction"
+            android:text="正面" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RightAction"
+            android:text="反面" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="\n↓↓連續猜對次數↓↓\n" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:id="@+id/times"
+        android:textColor="#8f0303"
+        android:text="0次!"
+        android:textAlignment="center"
+        android:textSize="300px" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再一次"
+        android:layout_gravity="center_horizontal"
+        android:onClick="CancelAction"/>
+
+</LinearLayout>
